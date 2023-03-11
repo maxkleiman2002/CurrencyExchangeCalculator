@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/amount_of_money_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/startMoney"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inputStartSum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/enterSum"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amount_of_money_start" />
+
+    <TextView
+        android:id="@+id/amount_of_money_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/finalMoney"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/inputFinishSum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Отримане значення"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amount_of_money_finish" />
+
+    <TextView
+        android:id="@+id/textCurrency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/selectCurrency"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputFinishSum" />
+
+    <RadioGroup
+        android:id="@+id/optionCurrency"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:checkedButton="@id/dollarRadBut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCurrency">
+
+        <RadioButton
+            android:id="@+id/dollarRadBut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/dollarRad" />
+
+        <RadioButton
+            android:id="@+id/euroRadBut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="8dp"
+            android:text="@string/euroRad" />
+
+        <RadioButton
+            android:id="@+id/poundsRadBut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="4dp"
+            android:text="@string/poundsRad" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/calculateText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/optionCurrency" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

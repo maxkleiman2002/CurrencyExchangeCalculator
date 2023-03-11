@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CurrencyExchangeCalcualtor</string>
+    <string name="finalMoney">Я отримаю</string>
+    <string name="startMoney">В мене є</string>
+    <string name="enterSum">Введіть суму</string>
+    <string name="receivedValue">Отримане значення</string>
+    <string name="dollarRad">Долари</string>
+    <string name="euroRad">Євро</string>
+    <string name="poundsRad">Фунти</string>
+    <string name="selectCurrency">Оберіть валюту</string>
+    <string name="calculateText">Розрахувати</string>
+    <string name="finalCurrency">%s</string>
+</resources>
